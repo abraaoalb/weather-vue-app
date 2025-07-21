@@ -1,33 +1,70 @@
-# weather-vue-app
+```markdown
+# My Weather App: A Vue & Node.js Weather Dashboard
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is a web-based weather application built with Vue.js for the frontend and Node.js for the backend. It fetches weather data from the OpenWeatherMap API and displays current conditions, a 5-day forecast, and a temperature chart.
 
-## Recommended IDE Setup
+## Features:
+* Search for weather by city.
+* Display current temperature, humidity, wind speed, and sea level.
+* View a 5-day weather forecast.
+* Visualize temperature trends with a Chart.js graph.
+* Backend proxy with caching for efficient API calls.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technologies Used:
+* Frontend: Vue.js (with Vite), Chart.js
+* Backend: Node.js, Express, Axios
+* API: OpenWeatherMap
 
-## Type Support for `.vue` Imports in TS
+## Getting Started:
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+### Prerequisites:
+* Node.js (LTS version recommended)
+* npm (Node Package Manager)
+* An OpenWeatherMap API Key (obtain one from [https://openweathermap.org/api](https://openweathermap.org/api))
 
-## Customize configuration
+### Setup:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/abraaoalb/weather-vue-app.git](https://github.com/abraaoalb/weather-vue-app.git)
+    cd weather-vue-app
+    ```
+2.  **Backend Setup:**
+    * Navigate to the backend directory:
+        ```bash
+        cd backend
+        ```
+    * Install dependencies:
+        ```bash
+        npm install
+        ```
+    * **IMPORTANT:** Replace `'YOUR_OPENWEATHER_API_KEY'` in `server.js` with your actual OpenWeatherMap API Key.
+        * (Currently, the key is hardcoded as `69c66fb8b5ce3baed25fdf3a8ffeff47`. For a production app, consider using environment variables.)
+    * Start the backend server:
+        ```bash
+        node server.js
+        ```
+        (The server will run on `http://localhost:8081`)
 
-## Project Setup
+3.  **Frontend Setup:**
+    * Open a new terminal and navigate to the frontend directory:
+        ```bash
+        cd frontend
+        ```
+    * Install dependencies:
+        ```bash
+        npm install
+        ```
+    * Start the frontend development server:
+        ```bash
+        npm run dev
+        ```
+        (The app will be available at `http://localhost:8080`)
 
-```sh
-npm install
-```
+## Usage:
+1.  Ensure both backend and frontend servers are running.
+2.  Open your browser to `http://localhost:8080`.
+3.  Enter a city name in the search bar and press Enter.
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+## License:
+[Optional: Add your preferred license information here, e.g., MIT License]
