@@ -1,0 +1,35 @@
+# Node.js and dependencies
+/node_modules
+/dist
+/dist-ssr
+/coverage
+/logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.*.local
+.local
+
+# Vue/Vite specific
+.vite/
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json # Keep extensions.json to recommend VS Code extensions
+.idea/                 # JetBrains IDEs folder
+*.suo                  # Visual Studio Solution User Options
+*.ntvs* # Node.js Tools for Visual Studio
+*.njsproj              # Node.js project file for Visual Studio
+*.sln                  # Visual Studio solution file
+*.sw?                  # Vim swap files
+
+# TypeScript build info
+*.tsbuildinfo
+
+# OS generated files
+.DS_Store              # macOS
+Thumbs.db              # Windows
